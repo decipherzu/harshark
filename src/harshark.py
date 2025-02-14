@@ -10,7 +10,6 @@ Usage:
 
 """
 
-import itertools
 import os
 import sys
 from itertools import cycle
@@ -30,14 +29,13 @@ from PyQt5.QtWidgets import QLineEdit
 from PyQt5.QtWidgets import QPlainTextEdit
 from PyQt5.QtWidgets import QPushButton
 from PyQt5.QtWidgets import QShortcut
-from PyQt5.QtWidgets import QSplitter
 from PyQt5.QtWidgets import QTabWidget
 from PyQt5.QtWidgets import QTableWidget
 from PyQt5.QtWidgets import QTableWidgetItem
 from PyQt5.QtWidgets import QTextEdit
-from PyQt5.QtWidgets import QHBoxLayout
-from PyQt5.QtWidgets import QVBoxLayout
+from PyQt5.QtWidgets import QVBoxLayout, QHBoxLayout, QSplitter
 from PyQt5.QtWidgets import QWidget
+from PyQt5.QtWidgets import QSplitter
 
 import configmgr
 from actions.aboutdialog import AboutDialog
@@ -598,5 +596,5 @@ def main():
     main_harshark = MainApp()
     sys.exit(app.exec_())
 
-if __name__ == '__main__':
+    MainApp()
     main()
